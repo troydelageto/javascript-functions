@@ -1,6 +1,18 @@
-function seed() {}
+function seed(a,b,c) {
+  let seedArray=[];
+  seedArray=[a,b,c];
+  return seedArray;
+}
 
-function same([x, y], [j, k]) {}
+let result1=seed(1,2,3)
+console.log(result1)
+
+function same([x, y], [j, k]) {
+ 
+  return (x==j&&y==k) ? true:false;
+}
+let results2=same([2,3],[2,3])
+console.log(results2);
 
 // The game state to search for `cell` is passed as the `this` value of the function.
 function contains(cell) {}
